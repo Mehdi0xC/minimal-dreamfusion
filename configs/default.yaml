@@ -1,0 +1,27 @@
+# Default config for stable-sds
+device: 'cuda'
+
+seed: 999
+
+width: 512
+height: 512
+
+default_prompts:
+  - "A cat sitting on a chair"
+  - "A red apple on a wooden table"
+  - "A blue car parked on the street"
+
+prior_editing_prompts:
+  - "A dog"
+  - "A pineapple"
+  - "A red car"
+
+CFG: 6.0
+
+n_timesteps: 50
+n_sampling_steps: 500
+n_scheduler_warmup_steps: 100
+
+output_dir: None # Override this part during calling
+
+prior: False
