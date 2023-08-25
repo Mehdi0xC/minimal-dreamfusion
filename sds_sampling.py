@@ -53,7 +53,7 @@ def main(config):
             optimizer.zero_grad()
 
             # Sample a random timestep  
-            t = torch.randint(0, 1000, [1], dtype=torch.long, device=pipe.device)
+            t = torch.randint(0, config.max_noise, [1], dtype=torch.long, device=pipe.device)
 
             # Distillation loop
             with torch.no_grad():

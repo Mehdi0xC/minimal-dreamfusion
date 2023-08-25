@@ -17,4 +17,4 @@ python sds_sampling.py default output_dir=outputs/exp3-5 CFG=50
 python sds_sampling.py default output_dir=outputs/exp3-6 CFG=100
 
 # Reproduce experiment #4
-python sds_sampling.py default output_dir=outputs/exp4 CFG=100 prior=True
+python sds_sampling.py default output_dir=outputs/exp4 CFG=50 prior=True max_noise=750

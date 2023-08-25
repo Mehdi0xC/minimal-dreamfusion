@@ -25,3 +25,4 @@ n_scheduler_warmup_steps: 100
 output_dir: None # Override this part during calling
 
 prior: False
+max_noise: 1000
